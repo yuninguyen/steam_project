@@ -459,14 +459,18 @@ text-indent: 32%;
 \*----------------------------*/
 footer {
   flex: 1;
-  background-color: #7BBFE6;
-  color: white;
+  background-color: #4C768E;
+  color: #FAEAAB;
 }
 
 footer a, footer a:hover {
-  color: white;
+  color: #FAEAAB;
 }
 
+.splitter {
+  background-color: #7BBFE6;
+  height: 30px;
+}
 /*----------------------------*\
 	Social Footer
 \*----------------------------*/
@@ -483,8 +487,8 @@ footer a, footer a:hover {
 
 }
 .social_footer_ul li a { 
-	color:#CCC; 
-	border:1px solid #CCC; 
+	color:#FAEAAB;; 
+	border:1px solid #FAEAAB; 
 	padding:8px;
 	border-radius:50%;
 }
