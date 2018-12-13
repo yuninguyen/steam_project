@@ -1,6 +1,8 @@
 
+
+@media all and (min-width: 900px) and (max-width: 600px) {}
+
 h1 {
-  font-size: 3rem;
   text-align: center;
   font-weight: bold;
 }
@@ -265,9 +267,11 @@ float: right;
   margin-right: 500px;
 }
 
-.desc-content-link5 {
+.our-team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 10px;
-  text-align: center;
 }
 
 /*----------------------------*\
@@ -278,17 +282,28 @@ float: right;
   background-size: cover;
 }
 
+/*
 .section-title-section6 >h1 {
 position: absolute;
 top: 80px;
-font-size: 3rem;
+font-size: 2.5rem;
 color: #FAEAAB;
 text-indent: 40%;
 }
+*/
+
+#section-6 .section-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+
+}
 
 .maps-section6 > img {
-  width: 600px;
-  height: 400px;
+  width: 500px;
+  height: 280px;
   margin-top: 220px;
   padding-left: 50px;
   margin-left: 320px;
@@ -524,3 +539,51 @@ footer a, footer a:hover {
 .navbar {
   justify-content: start;
 } */
+
+/*----------------------------*\
+  Contact US
+\*----------------------------*/
+.contact {
+  margin-top: 165px;
+  display: flex;
+}
+
+.google-map, .contact-content {
+  flex: 1;
+  padding: 15px;
+}
+
+#map {
+  height: 100%;
+}
+
+.info-contact {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.ic-contact {
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+}
+
+.desc-contact {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.desc-contact .cont-contact {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.btn.btn-info {
+  width: 250px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
