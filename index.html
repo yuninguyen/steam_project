@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,84 +21,126 @@
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </head>
-
-<body>
-	<!-- Header -->
-	<div class="header">
-		<!-- Top Header -->
-		<div class="top-header">
-			<!--Logo -->
+<body class="homepage" id="top">
+	
+	<!-- Top Header -->
+	<div class="top-header">
+		<!-- Header -->
+		<header class="site-header" id="site-header">
+			
+			<!-- Logo -->
 			<div class="header-logo">
-				<a href="#" class="logo"><img src="img/coffee-cup-with-steam.svg" alt="STEAM"></a>
+				<a href="#" class="logo">
+					<img src="img/coffee-cup-with-steam.svg" alt="STEAM">
+				</a>	
 			</div>
 			<!-- /Logo -->
-
-			<!--Slogan -->
-			<div class="slogan">
-				<h2>STEAM</h2>
-				<p>What is our tagline?</p>
+			
+			<!-- Icon Logo Text -->
+			<div class="icon-logo-text">
+				<a href="#">
+					<h2>STEAM</h2>
+					<p>Children's Toys and Activities</p>
+				</a>				
 			</div>
-			<!-- /Slogan -->
-		</div>
-		<!-- /Top Header -->
+			<!-- /Icon Logo Text -->
 
-		<!-- Nav Header -->
-		<!-- <div class="nav-header">
-			<a class="menu-button" href="#"><img src="img/ic-menu.png"></a>
-			<div class="search-content" id="search">
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-warning" type="submit">Search</button>
-				</form>
-			</div>
-		</div> -->
 
-		<div class="pos-f-t">
-			<nav class="navbar navbar-light nav-header" style="margin-left: 0px;">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-				aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon custome-icon"></span></button>
-				<div class="search-content" id="search">
-					<form class="form-inline my-2 my-lg-0">
-						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn btn-warning" type="submit">Search</button>
-					</form>
+			<!-- Header Middle Area -->
+			<div class="header-middle-area">
+				<!-- Main Nav -->
+				<nav class="main-nav" id="main-nav">
+					<!-- Main Sections -->
+					<ul class="main-sections">
+
+						<!-- Classes -->
+						<li class="Classes">
+							<a href="our-classes.html">
+								<img src="img/fontawesome/classes.svg" width="26px" height="26px" alt="classes">
+								<span>Classes</span>
+							</a>
+						</li>
+						<!-- Classes -->
+
+						<!-- Be Our Coach -->
+						<li class="be-our-coach">
+							<a href="#">
+								<img src="img/fontawesome/coaching.svg" width="26px" height="26px" alt="coaching">
+								<span>Be Our Coach</span>
+							</a>
+						</li>
+						<!-- /Be Our Coach -->
+
+						<!-- Steam Blogs -->
+						<li class="steam-blogs-menu">
+							<a href="#">
+								<img src="img/fontawesome/blogging.svg" width="26px" height="26px" alt="blogging">
+								<span>STEAM Blogs</span>
+							</a>
+						</li>
+						<!-- /Steam Blogs -->	
+
+						<!-- About Us -->
+						<li class="about-us-menu">
+							<a href="#">
+								<img src="img/fontawesome/about-us.svg" width="26px" height="26px" alt="About Us">
+								<span>About Us</span>
+							</a>
+						</li>
+						<!-- /About Us -->
+
+						<!-- Contact Us -->
+						<li class="contact-us-menu">
+							<a href="#">
+								<img src="img/fontawesome/contact-us.svg" width="26px" height="26px" alt="Contact Us">
+								<span>Contact Us</span>
+							</a>
+						</li>
+						<!-- /Contact Us -->
+
+					</ul>
+					<!-- /Main Sections -->
+				</nav>
+				<!-- /Main Nav -->
+
+				<!-- Search Bar -->
+				<div class="search" role="search" id="search=area">
+					<div class="chw-widget">
+						<form role="search" method="get" id="searchform" class="search-form" action="#">
+							<label class="screen-reader-text" id="search-label" for="search-input">Search for:</label>
+
+							<input type="search" required name="s" id="search-input" aria-labelledby="search-label" class="search-field" placeholder="e.g. flexbox" value="">
+
+							<input type="hidden" name="orderby" value="relevance">
+							<input type="hidden" name="post_type" value="post,page,guide">
+							<img src="img/fontawesome/search.svg" width="26px" height="26px" alt="icon search">
+							<button type="submit" class="button-invisible">
+								<img src="img/fontawesome/search.svg" width="26px" height="26px" alt="icon search">
+							</button>
+						</form>
+					</div>
 				</div>
-			</nav>
-		</div>
-		
-		<div class="collapse" id="navbarToggleExternalContent">
-				<!-- <div class="bg-dark p-4">
-					<h4 class="text-white">Collapsed content</h4>
-					<span class="text-muted">Toggleable via the navbar brand.</span>
-				</div> -->
-				<div class="bg-light" style="width: 200px;">
-					<div class="nav-item active">
-						<a class="nav-link" href="./index.html">Home Page</a>
-					</div>
-					<div class="nav-item">
-						<a class="nav-link" href="#">Find a Class</a>
-					</div>
-					<div class="nav-item">
-						<a class="nav-link" href="#">Be Our Coach</a>
-					</div>
-					<div class="nav-item">
-						<a class="nav-link" href="#">STEAM Blogs</a>
-					</div>
-					<div class="nav-item">
-						<a class="nav-link" href="#">About Us</a>
-					</div>
-					<div class="nav-item">
-						<a class="nav-link" href="./contact-us.html">Contact Us</a>
-					</div>
+				<!-- /Search Bar -->
+
+				<!-- Mobile Actions -->
+				<div class="mobile-actions" id="mobile-actions">
+					<button class="search-opener" id="search-opener">
+						<img src="img/fontawesome/search.svg" width="26px" height="26px" alt="icon search">
+					</button>
+
+					<button id="mobile-nav-button" class="mobile-nav-button">
+						<img class="icon-burger" src="img/fontawesome/menu-icon-burger.svg" width="28px" height="28px">
+						<img class="icon-close" src="img/fontawesome/menu-icon-close.svg" width="28px" height="28px">
+					</button>
 				</div>
+				<!-- /Mobile Actions -->
 
 			</div>
-		</div>
-
-		<!-- /Nav Header -->
+			<!-- /Header Middle Area -->
+		</header>
+		<!-- Header -->		
 	</div>
-	<!-- /Header -->
+	<!-- /Top Header -->
 
 	<!-- Section 1 -->
 	<div class="section first" id="section-1">
@@ -137,104 +178,133 @@
 					<div class="advertisement">
 						<!-- Find A Class -->
 						<div class="child-class">
-
-							<div class="video-content-section2">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/IdTzVjXXDyM?controls=0" frameborder="0"
+							<div class="video-content embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IdTzVjXXDyM?controls=0" frameborder="0"
 								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
-							<div class="desc-content-section2">
+							<div class="desc-content">
 								<div class="desc-title">A class for Every Child</div>
 								<div class="desc-info">At the waterside children's studio school, our mission is to provide a safe and nurturing learning environment where creativity and artistic expression are integral to the academic and emotional success of every child. Through music, drama, visual arts, film, technology, writing and dance, our rigorous and progressive curriculum will empower all our thinking, personal integrity and self-esteem that go beyond the classroom walls. As a community, we will take pride and ownership of our school and celebrate all our accomplishments.
 								</div>
-								<i class="fas fa-circle" style="font-size:15px; color: #7BBFE6"></i>
-								<a class="desc-link" href="https://mommypoppins.com/westchester-kids/classes-enrichment/stem-and-steam-classes-for-westchester-kids">Find a class near you</a>
+								<a href="#" class="btn-outline">Find A Class Near You</a>
+								<!-- <i class="fas fa-circle" style="font-size:15px; color: #7BBFE6"></i>
+									<a class="desc-link" href="https://mommypoppins.com/westchester-kids/classes-enrichment/stem-and-steam-classes-for-westchester-kids">Find A class near you</a> -->
+								</div>
 							</div>
+							<!-- /Find A Class -->
 						</div>
-						<!-- /Find A Class -->
+						<!-- /Advertisement -->
 					</div>
-					<!-- /Advertisement -->
+					<!-- /Main Column Section 2 -->
 				</div>
-				<!-- /Main Column Section 2 -->
+				<!-- /Row -->
 			</div>
-			<!-- /Row -->
+			<!-- /Container -->
 		</div>
-		<!-- /Container -->
-	</div>
-	<!-- /Section 2 -->
+		<!-- /Section 2 -->
 
-	<!-- Section 3 -->
-	<div class="section" id="section-3">
-		<!-- Container -->
-		<div class="container">
-			<!-- Row -->
-			<div class="row">
-				<!-- Main Column Section 3 -->
-				<div class="col-md-12">
-					<!-- Coaching -->
-					<div class="current-coaches">
-						<!-- Description Coaching -->
-						<div class="child-class">
-							<div class="desc-content-section3">
-								<div class="desc-title">What is coaching?</div>
-								<div class="desc-info">Establish and maintain systems for educators to access,
-								preview, or receive training in hardware usage and software applications. Develop a technology resource approach that can be easily accessed by teachers, students and staff. Develops and implements a School-wide technology in-service program.</div>
-								<i class="fas fa-circle" style="font-size:15px; color: #7BBFE6"></i>
-								<a class="desc-link" href="https://mommypoppins.com/westchester-kids/classes-enrichment/stem-and-steam-classes-for-westchester-kids">Apply Now</a>
+		<!-- Section 3 -->
+		<div class="section" id="section-3">
+			<!-- Container -->
+			<div class="container">
+				<!-- Row -->
+				<div class="row">
+					<!-- Main Column Section 3 -->
+					<div class="col-md-12">
+						<!-- Coaching -->
+						<div class="current-coaches">
+							<!-- Description Coaching -->
+							<div class="child-class">
+								<div class="desc-content">
+									<div class="desc-title">What is coaching?</div>
+									<div class="desc-info">Establish and maintain systems for educators to access,
+									preview, or receive training in hardware usage and software applications. Develop a technology resource approach that can be easily accessed by teachers, students and staff. Develops and implements a School-wide technology in-service program.</div>
+									<a href="#" class="btn-outline">Apply Now</a>
+								<!-- <i class="fas fa-circle" style="font-size:15px; color: #7BBFE6"></i>
+									<a class="desc-link" href="https://mommypoppins.com/westchester-kids/classes-enrichment/stem-and-steam-classes-for-westchester-kids">Apply Now</a> -->
+								</div>
+
+								<div class="video-content embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0tkAvWWhKf4?controls=0" frameborder="0"
+									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+
 							</div>
-
-							<div class="video-content-section3">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/0tkAvWWhKf4?controls=0" frameborder="0"
-								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							</div>
-
+							<!-- /Description Coaching -->
 						</div>
-						<!-- /Description Coaching -->
+						<!-- /Coaching -->
 					</div>
-					<!-- /Coaching -->
+					<!-- /Main Column Section 3 -->
 				</div>
-				<!-- /Main Column Section 3 -->
-			</div>
-			<!-- /Row -->
-		</div>
-		<!-- /Container -->
-	</div>
-	<!-- /Section 3 -->
+				<!-- /Row -->
 
-	<!-- Section 4 -->
-	<div class="section" id="section-4">
-		<!-- Container -->
-		<div class="container">
-			<!-- Row -->
-			<div class="row">
-				<!-- Main Column Section 4 -->
-				<div class="col-md-12">
-					<!-- STEAM Blogs -->
-					<div class="steam-blogs">
-						<!-- Description STEAM Blogs -->
-						<div class="child-class">
-							<div class="desc-content-section4">
-								<div class="desc-title" style="text-align: center;">Healthy Snack Ideas</div>
-								<div class="desc-info">Snacks for kids? Easy enough. Healthy snacks for kids? Admittedly, a little trickier. While feeding kids healthy snacks should be a priority, let’s face it, often it feels like there aren't enough hours in the day to make wholesome, good-for-the-body treats. (And sometimes it's just impossible to resist a bag of chips!) But guess what? Making healthy snacks—and getting your kids to eat them—can be done. All you need is a little inspiration and preparation.</div>
-								<div class="desc-content-link-section4">
+				<!-- Row -->
+				<div class="row">
+					<div class="col-md-3 text-center">
+						<img class="rounded-circle" src="http://placehold.it/140x140" />
+						<div class="name-coach">Name Coach 1</div>
+					</div>		
+
+					<div class="col-md-3 text-center">
+						<img class="rounded-circle" src="http://placehold.it/140x140" />
+						<div class="name-coach">Name Coach 2</div>
+					</div>		
+
+					<div class="col-md-3 text-center">
+						<img class="rounded-circle" src="http://placehold.it/140x140" />
+						<div class="name-coach">Name Coach 3</div>
+					</div>		
+
+					<div class="col-md-3 text-center">
+						<img class="rounded-circle" src="http://placehold.it/140x140" />
+						<div class="name-coach">Name Coach 4</div>
+					</div>		
+				</div>
+				<!-- /Row -->
+			</div>
+			<!-- /Container -->
+		</div>
+		<!-- /Section 3 -->
+
+		<!-- Section 4 -->
+		<div class="section" id="section-4">
+			<!-- Container -->
+			<div class="container">
+				<!-- Row -->
+				<div class="row">
+					<!-- Main Column Section 4 -->
+					<div class="col-md-12">
+						<!-- STEAM Blogs -->
+						<div class="steam-blogs">
+							<!-- Description STEAM Blogs -->
+							<div class="child-class">
+								<div class="desc-content">
+									<div class="desc-title" style="text-align: center;">Healthy Snack Ideas</div>
+									<div class="desc-info">Snacks for kids? Easy enough. Healthy snacks for kids? Admittedly, a little trickier. While feeding kids healthy snacks should be a priority, let’s face it, often it feels like there aren't enough hours in the day to make wholesome, good-for-the-body treats. (And sometimes it's just impossible to resist a bag of chips!) But guess what? Making healthy snacks—and getting your kids to eat them—can be done. All you need is a little inspiration and preparation.</div>
+									<a href="#" class="btn-outline">Read More</a>
+<!-- 								<div class="desc-content-link-section4">
 									<i class="fas fa-circle" style="font-size:15px; color: #7BBFE6"></i>
 									<a class="desc-link" href="https://mommypoppins.com/westchester-kids/classes-enrichment/stem-and-steam-classes-for-westchester-kids">Read More</a>
-								</div>
+								</div> -->
 							</div>
 							
-							<div class="desc-content-section4">
+							<div class="desc-content">
 								<div class="desc-title" style="text-align: center;">Why Children Should Play Outside?</div>
 								<div class="desc-info">Outdoor play also enables children to enjoy the natural environment and learn to seek out exercise, fresh air, and activity. There is something fundamentally healthy about using the outdoors. Thus outdoor play develops disposition for the outdoors, for physical activity, and for care of the environment.</div>
-								<div class="desc-content-link-section4">
+								<a href="#" class="btn-outline">Read More</a>
+								<!-- <div class="desc-content-link-section4">
 									<i class="fas fa-circle" style="font-size:15px; color: #7BBFE6"></i>
 									<a class="desc-link" href="https://mommypoppins.com/westchester-kids/classes-enrichment/stem-and-steam-classes-for-westchester-kids">Read More</a>
-								</div>
+								</div> -->
 							</div>
-							<div class="desc-content-link4">
+							<a href="#" class="btn-outline">STEAM Toys and Activities</a>
+							<!-- <div class="desc-content-link4">
 								<i class="fas fa-circle" style="font-size:15px; color: #7BBFE6"></i>
 								<a class="desc-link" href="https://mommypoppins.com/westchester-kids/classes-enrichment/stem-and-steam-classes-for-westchester-kids">STEAM Toys and Activities</a>
-							</div>
+							</div> -->
 						</div>
-						<!-- /Description STEAM Blogs -->
+						<!-- Description STEAM Blogs -->
+						
 					</div>
 					<!-- /STEAM Blogs -->
 				</div>
@@ -258,83 +328,95 @@
 					<div class="about-us">
 						<!-- Description About Us -->
 						<div class="child-class">
-							<div class="desc-content-section5">
-								<div class="desc-title" style="text-align: center">Our Mission. Our Values.</div>
-								<div class="desc-info">Snacks for kids? Easy enough. Healthy snacks for kids? Admittedly, a little trickier. While feeding kids healthy snacks should be a priority, let’s face it, often it feels like there aren't enough hours in the day to make wholesome, good-for-the-body treats. (And sometimes it's just impossible to resist a bag of chips!) But guess what? Making healthy snacks—and getting your kids to eat them—can be done. All you need is a little inspiration and preparation.</div>
-								<div class="our-team">
-									<i class="fas fa-circle" style="font-size:14px; color: #7BBFE6";"></i>
-									<a class="desc-link" href="https://mommypoppins.com/westchester-kids/classes-enrichment/stem-and-steam-classes-for-westchester-kids";">Our Team</a>
+							<div class="desc-title" style="text-align: center">Our Mission. Our Values.
+								<div class="desc-content">
+									<div class="desc-info">Snacks for kids? Easy enough. Healthy snacks for kids? Admittedly, a little trickier. While feeding kids healthy snacks should be a priority, let’s face it, often it feels like there aren't enough hours in the day to make wholesome, good-for-the-body treats. (And sometimes it's just impossible to resist a bag of chips!) But guess what? Making healthy snacks—and getting your kids to eat them—can be done. All you need is a little inspiration and preparation.</div>
+									<div class="our-team">
+										<a href="#" class="btn-outline">Our Team</a>
+									<!-- <i class="fas fa-circle" style="font-size:14px; color: #7BBFE6";"></i>
+										<a class="desc-link" href="https://mommypoppins.com/westchester-kids/classes-enrichment/stem-and-steam-classes-for-westchester-kids";">Our Team</a> -->
+									</div>
 								</div>
 							</div>
+							<!-- /Description About Us -->
 						</div>
-						<!-- /Description About Us -->
+						<!-- /About Us -->
 					</div>
-					<!-- /About Us -->
+					<!-- /Main Column Section 5 -->
 				</div>
-				<!-- /Main Column Section 5 -->
+				<!-- /Row -->
 			</div>
-			<!-- /Row -->
+			<!-- /Container -->
 		</div>
-		<!-- /Container -->
-	</div>
-	<!-- /Section 5 -->
+		<!-- /Section 5 -->
 
-	<!-- Section 6 -->
-	<div class="section" id="section-6">
-		<!-- Container -->
-		<div class="container">
-			<!-- Row -->
-			<div class="row">
-				<!-- Main Column Section 6 -->
-				<div class="col-md-12">
-					<!-- Contact Us -->
-					<div class="contact-us">
-						<!-- Description Contact Us -->
-						<div class="child-class">
-							<!-- Section Title -->
-							<div class="section-title">
-								<h1>Where To Find Us</h1>
-							</div>
-							<!-- /Section Title -->
-							
-							<div class="maps-section6">
-								<img src="img/google_maps_placeholder.png" alt="Steam Project Maps">
-							</div>
+		<!-- Section 6 -->
+		<div class="section" id="section-6">
+			<!-- Container -->
+			<div class="container">
+				<!-- Row -->
+				<div class="row">
+					<!-- Main Column Section 6 -->
+					<div class="col-md-12">
+						<!-- Contact Us -->
+						<div class="contact-us">
+							<!-- Description Contact Us -->
+							<div class="child-class">
+								<!-- Section Title -->
+								<div class="desc-title">Where To Find Us</div>
+								<!-- /Section Title -->
 
-							<div class="desc-content-section6">
-								<div class="desc-info" style="text-align: left;">1 Infinity Soi <br>
-									Nongbon, Prawet, Bangkok <br>
-									Thailand 10250	<br>	
+								<div class="maps-section">
+									<span style="display: inline-block; height: 100%; vertical-align: middle;"></span>
+									<img src="img/google_maps_placeholder.png" alt="Steam Project Maps">
 								</div>
-								<i class="fas fa-circle" style="font-size:15px; color: #7BBFE6"></i>
-								<a class="desc-link" href="./contact-us.html">Contact Us</a>
+
+								<div class="desc-content">
+									<div class="desc-info" style="text-align: left;">1 Infinity Soi <br>
+										Nongbon, Prawet, Bangkok <br>
+										Thailand 10250	<br>	
+									</div>
+									<a href="#" class="btn-outline">Contact Us</a>
+								<!-- <i class="fas fa-circle" style="font-size:15px; color: #7BBFE6"></i>
+									<a class="desc-link" href="./contact-us.html">Contact Us</a> -->
+								</div>
+
 							</div>
-
+							<!-- /Description Contact Us -->
 						</div>
-						<!-- /Description Contact Us -->
+						<!-- /Contact Us -->
 					</div>
-					<!-- /Contact Us -->
+					<!-- /Main Column Section 6 -->
 				</div>
-				<!-- /Main Column Section 6 -->
+				<!-- /Row -->
 			</div>
-			<!-- /Row -->
+			<!-- /Container -->
 		</div>
-		<!-- /Container -->
-	</div>
-	<!-- /Section 6 -->
+		<!-- /Section 6 -->
 
-	<!-- Scroll Down Button -->
-	<div class="scroll-down-btn">
-		<div class="chevron"></div>
-		<div class="chevron"></div>
-		<div class="chevron"></div>
-		<a href="#" id="advertisement"></a>
-	</div>
-	<!-- /Scroll Down Button -->
-	
-	<div class="splitter"></div>
+		<!-- Scroll Down Button -->
+		<div class="scroll-down-btn">
+			<div class="chevron"></div>
+			<div class="chevron"></div>
+			<div class="chevron"></div>
+			<a href="#" id="advertisement"></a>
+		</div>
+		<!-- /Scroll Down Button -->
 
-	<!-- Footer -->
+		<button id="goToTop" title="Go to top"><img src="img/fontawesome/arrows-inside-a-circle-pointing-up.svg"></button>
+
+	<!-- Pagination -->
+	<div class="pagination-section">
+		<div class="dot-section active" id="dot-section-1" data-idx="1"></div>
+		<div class="dot-section" id="dot-section-2" data-idx="2"></div>
+		<div class="dot-section" id="dot-section-3" data-idx="3"></div>
+		<div class="dot-section" id="dot-section-4" data-idx="4"></div>
+		<div class="dot-section" id="dot-section-5" data-idx="5"></div>
+		<div class="dot-section" id="dot-section-6" data-idx="6"></div>
+	</div>
+	<!-- /Pagination -->
+
+		<!-- Footer -->
 	<footer class="page-footer font-small mdb-color pt-4">
 
 		<!-- Footer Links -->
@@ -430,7 +512,7 @@
 				<div class="col-md-7 col-lg-8">
 
 					<!--Copyright-->
-					<p class="text-center text-md-left">© 2018 Copyright:
+					<p class="text-center text-md-left" style="padding-left: 20px;">© 2018 Copyright:
 						<a href="#">
 							<strong> Steam Project by Nicolas - Chen - Nadz - Mickey - Yuni</strong>
 						</a>
@@ -460,8 +542,8 @@
 	</footer>
 	<!-- /Footer -->
 
+
 	<!-- Optional JavaScript -->
 	<script src="js/main.js"></script>
 </body>
-
 </html>
